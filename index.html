@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Animation Effect | Fun using Programing Language
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Just Fun</h2>
+    <div class="container"></div>
+
+<script>
+  let container = document.querySelector('.container');
+  let count = 600;
+  for(let i = 0; i < count; i++){   queueMicrotask  
+     let box = document.createElement('div');
+     box.className = 'box';
+     container.appendChild(box);
+  }
+
+  let box = document.querySelectorAll('.box');
+  for(let i = 0; i < box.length; i++){
+    box[i].addEventListener('mouseover',(e) => {
+        box[i].classList.add('action')
+    })
+  }
+
+
+
+</script>
+
+</body>
+</html>
